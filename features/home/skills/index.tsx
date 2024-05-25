@@ -1,7 +1,7 @@
-import { base } from './_common/data'
+import { base,data } from './_common/data'
 import { Card } from '@/components/Card'
 
-const Skills = () => {
+export const Skills = () => {
     return (
         <section className="relative">
             <div className="pb-[32px] border-b-[1px] border-background-gray-dark flex justify-between">
@@ -21,8 +21,16 @@ const Skills = () => {
                     }
                 </div>
             </div>
+            <div className="flex pt-[32px] justify-between">
+                {
+                    data.map((item,index)=>
+                        <Card key={index} className="flex flex-col items-center w-fit">
+                            <item.icon/>
+                            <p className="mt-[12px] text-[16px] font-e_medium text-typography-gray-light">{item.name}</p>
+                        </Card>
+                    )
+                }
+            </div>
         </section>
     )
 }
-
-export default Skills
