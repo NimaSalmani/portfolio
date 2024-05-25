@@ -1,7 +1,9 @@
-import React from 'react'
+import { Welcome } from "./welcome"
 
 export const Intro = () => {
   return (
-    <div>index</div>
+    <section>
+        <Welcome/>
+    </section>
   )
 }
