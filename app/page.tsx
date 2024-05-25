@@ -1,7 +1,8 @@
+import { Home } from "@/features/home"
 
 const page = () => {
   return (
-    <div>page</div>
+    <Home/>
   )
 }
 
