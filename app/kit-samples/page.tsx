@@ -26,9 +26,12 @@ import {
   IcZeplin,
 } from "@/components/Icon";
 
+import { Card } from "@/components/Card";
+
 const page = () => {
   return (
-    <div className="p-[40px] min-h-screen">
+    <div className="py-[40px] min-h-screen">
+
       <div>
         <h1 className="text-typography-default font-e_semibold text-2xl mb-5">
           Buttons
@@ -154,6 +157,24 @@ const page = () => {
           </SvgIcon>
         </div>
       </div>
+
+      <hr className="my-7" />
+
+      <div>
+        <h1 className="text-typography-default font-e_semibold text-2xl mb-5">
+          Cards
+        </h1>
+        <div className="grid grid-cols-5 gap-7">
+          <Card color="purple" className="h-28">Hello</Card>
+          <Card color="purple-dark" className="h-28">Hello</Card>
+          <Card color="gray-dark" className="h-28">Hello</Card>
+          <Card color="red-dark" className="h-28">Hello</Card>
+          <Card color="red" className="h-28">Hello</Card>
+          <Card color="purple" varient="outline" glass className="h-28">Hello</Card>
+          <Card color="red" varient="outline" glass className="h-28">Hello</Card>
+        </div>
+      </div>
+      
     </div>
   );
 };
