@@ -1,5 +1,5 @@
 import { base,data } from './_common/data'
-import { Card } from '@/components/Card'
+import { CardSkill } from './card-skill'
 
 export const Skills = () => {
     return (
@@ -13,10 +13,7 @@ export const Skills = () => {
                 <div className="w-4/12 flex gap-[24px] justify-end">
                     {
                         base.map((item,index) => 
-                            <Card key={index} className="flex flex-col items-center w-fit">
-                                <item.icon/>
-                                <p className="mt-[12px] text-[16px] font-e_medium text-typography-gray-light">{item.name}</p>
-                            </Card>
+                            <CardSkill key={index} icon={item.icon} name={item.name}/>
                         )
                     }
                 </div>
@@ -24,10 +21,7 @@ export const Skills = () => {
             <div className="flex pt-[32px] justify-between">
                 {
                     data.map((item,index)=>
-                        <Card key={index} className="flex flex-col items-center w-fit">
-                            <item.icon/>
-                            <p className="mt-[12px] text-[16px] font-e_medium text-typography-gray-light">{item.name}</p>
-                        </Card>
+                        <CardSkill key={index} icon={item.icon} name={item.name}/>
                     )
                 }
             </div>
