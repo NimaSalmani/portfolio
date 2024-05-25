@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "@/public/styles/globals.scss";
-import { Container } from "@/features/common/Container";
-import { Navigation } from "@/features/common/Navigation";
+import { Container } from "@/features/_common/Container";
+import { Navigation } from "@/features/_common/Navigation";
 
 export const metadata: Metadata = {
   title: "Create Next App",
