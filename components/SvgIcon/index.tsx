@@ -41,7 +41,7 @@ export const SvgIcon = (props:ISvgIcon) => {
             case "gray-default" : 
                 return "[&_path]:fill-typography-gray-default"
             break;
-            case "red-default" : 
+            case "red" : 
                 return "[&_path]:fill-common-red-default"
             break;
             case "red-dark" : 
